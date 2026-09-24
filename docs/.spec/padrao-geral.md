@@ -35,6 +35,19 @@ Passos numerados, do gatilho ao resultado. Inclua validações e mensagens exibi
 - Critérios de aceite: verificáveis, sem "etc."; use bullets `-`.
 - Fluxos longos podem aninhar sub-passos.
 
+## Fora de escopo (não-objetivos)
+
+A spec descreve **comportamento**, não implementação. Em geral ficam de fora:
+
+- tecnologia, framework, linguagem;
+- modelagem de banco, índices, migrations;
+- bibliotecas e serviços de terceiros;
+- detalhes de estilo/UI.
+
+O limite não é rígido: quando um detalhe técnico existe por causa de um
+comportamento esperado, ele é da spec. O que decide é o comportamento, não a
+tecnologia envolvida.
+
 ## Regras transversais
 
 Aplique quando fizer sentido na feature:
@@ -43,7 +56,7 @@ Aplique quando fizer sentido na feature:
 - **Confirmação**: ações destrutivas ou irreversíveis pedem confirmação explícita antes.
 - **Auditoria**: registrar quem fez, quando (data/hora) e o que mudou (valor anterior → novo).
 - **Listagens**: paginação, filtros e ordenação processados **no backend**; itens por página 10/25/50.
-- **Consistência de status**: transições de estado explícitas (ver [`padroes/fluxo-status.md`](./padroes/fluxo-status.md)).
+- **Consistência de status**: spec de workflow documenta a máquina de estados completa — status canônicos + tabela `de → para` com quem dispara cada transição — não só a ação isolada (ver [`padroes/fluxo-status.md`](./padroes/fluxo-status.md)).
 - **Validação de entrada**: campos obrigatórios, unicidade, limites e tipos; mensagens de erro claras.
 - **Recomendações gerais ([PAE-000])**: i18n (pt/en/es), suporte a fusos horários, tema claro/escuro, responsividade (TV→celular), métricas de queries e acesso externo aos logs da API.
 

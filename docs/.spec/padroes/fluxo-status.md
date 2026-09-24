@@ -53,6 +53,22 @@ Para <benefício>.
 - **Concorrência** tratada no backend (ex.: evitar overbooking).
 - Não permitir ação repetida (ex.: agendar duas vezes).
 
+## Máquina de estados (obrigatório)
+
+Cada card documenta uma transição, mas a spec precisa mostrar onde ela se encaixa.
+Sem o mapa completo, transições escritas isoladas tendem a divergir. Inclua:
+
+- a lista canônica de status da entidade (valores exatos);
+- a tabela completa `de → para` — todas as transições, não só a sua — com quem
+  dispara, condição e efeito.
+
+```markdown
+### **Máquina de estados:**
+| De | Para | Quem | Condição | Efeito |
+|----|------|------|----------|--------|
+| <status> | <status> | <papel> | <regra> | <efeito> |
+```
+
 ## Exemplos de transições do board
 
 - `Requisitar um pedido`: `"Em Preparação"` → `"Requisitado"` (criador; bloqueia edição)
@@ -76,3 +92,4 @@ Para <benefício>.
 - [ ] Registro de auditoria da transição.
 - [ ] Bloqueios de edição/exclusão definidos.
 - [ ] Concorrência/ações repetidas tratadas.
+- [ ] Máquina de estados completa incluída (status canônicos + tabela `de → para`).
