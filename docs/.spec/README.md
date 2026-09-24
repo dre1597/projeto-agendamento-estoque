@@ -1,18 +1,23 @@
-# .spec — Padrões de especificação
+# Kit de especificação
 
-Modelos para escrever specs de features novas no mesmo padrão usado no projeto.
-Base: board Trello "Projeto agendamento + estoque" (espelhado em `../`).
+Padrões pra escrever specs de features no mesmo formato, de forma que uma IA consiga
+implementar e uma pessoa consiga revisar. Aplicável a qualquer feature do projeto.
+
+A ideia central: a spec descreve **comportamento**, não implementação. Toda spec
+segue cinco seções fixas — Descrição, Objetivo, História, Fluxo principal e Critérios
+de aceite — e cada tipo de feature tem um padrão que define o que preencher nelas.
 
 ## Como usar
 
-1. Leia o [padrão geral](./padrao-geral.md) — é a estrutura que toda spec segue.
+1. Leia o [padrão geral](./padrao-geral.md) — estrutura, convenções, não-objetivos
+   e regras comuns.
 2. Identifique o tipo da feature e abra o padrão correspondente em [`padroes/`](./padroes).
-3. Copie o template, preencha e mantenha os critérios de aceite verificáveis.
+3. Copie o template, preencha e valide os critérios de aceite.
 
 ## Conteúdo
 
-- [`padrao-geral.md`](./padrao-geral.md) — estrutura base, convenções e regras transversais
-- `padroes/`
+- [`padrao-geral.md`](./padrao-geral.md) — estrutura base, convenções, não-objetivos e regras transversais
+- `padroes/` — um padrão por tipo de feature:
   - [`criar.md`](./padroes/criar.md)
   - [`listar.md`](./padroes/listar.md)
   - [`atualizar-visualizar.md`](./padroes/atualizar-visualizar.md)
