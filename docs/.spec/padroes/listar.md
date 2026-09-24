@@ -59,5 +59,5 @@ Para localizar rapidamente os registros desejados.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-004-listar-usuarios.md` — colunas `username`/`status`,
+`docs/especificacoes/01-usuarios/pae-004-listar-usuarios.md` — colunas `username`/`status`,
 filtro por `username` (parcial) e `status`, ordenação por `username`, 10/25/50.

@@ -56,6 +56,6 @@ Para <benefício>.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-002-atualizar-usuarios.md` e
-`docs/04-estoque/pae-021-visualizar-e-editar-pedido-de-movimentacao-de-estoque.md`
+`docs/especificacoes/01-usuarios/pae-002-atualizar-usuarios.md` e
+`docs/especificacoes/04-estoque/pae-021-visualizar-e-editar-pedido-de-movimentacao-de-estoque.md`
 (edição só pelo criador enquanto `"Em Preparação"`).

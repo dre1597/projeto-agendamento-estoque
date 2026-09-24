@@ -59,5 +59,5 @@ Para manter o cadastro limpo sem comprometer dados vinculados.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-003-excluir-usuarios.md` — exclusão individual, com
+`docs/especificacoes/01-usuarios/pae-003-excluir-usuarios.md` — exclusão individual, com
 confirmação e bloqueio se o usuário estiver vinculado a registros/processos ativos.

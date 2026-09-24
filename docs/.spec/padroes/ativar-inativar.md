@@ -54,5 +54,5 @@ Para gerenciar o acesso sem perder o histórico.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-005-ativar-e-inativar-usuarios.md` — inativos não fazem login
+`docs/especificacoes/01-usuarios/pae-005-ativar-e-inativar-usuarios.md` — inativos não fazem login
 e continuam na listagem.

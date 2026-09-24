@@ -55,4 +55,4 @@ Para entender o que foi modificado, por quem e quando.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-006-rastrear-historico-de-alteracoes-de-usuarios.md`.
+`docs/especificacoes/01-usuarios/pae-006-rastrear-historico-de-alteracoes-de-usuarios.md`.

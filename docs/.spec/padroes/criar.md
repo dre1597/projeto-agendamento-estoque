@@ -58,5 +58,5 @@ Para <benefício>.
 
 ## Exemplo real
 
-`docs/01-usuarios/pae-001-criar-usuarios.md` — cadastro com `username` único,
+`docs/especificacoes/01-usuarios/pae-001-criar-usuarios.md` — cadastro com `username` único,
 senha manual/gerada (mín. 8 caracteres) e flag de troca de senha no primeiro login.

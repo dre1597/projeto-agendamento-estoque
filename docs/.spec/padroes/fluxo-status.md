@@ -72,17 +72,17 @@ Sem o mapa completo, transições escritas isoladas tendem a divergir. Inclua:
 ## Exemplos de transições do board
 
 - `Requisitar um pedido`: `"Em Preparação"` → `"Requisitado"` (criador; bloqueia edição)
-  — `docs/04-estoque/pae-023-requisitar-um-pedido.md`
+  — `docs/especificacoes/04-estoque/pae-023-requisitar-um-pedido.md`
 - `Iniciar verificação`: `"Requisitado"` → `"Em Verificação"` (admin)
-  — `docs/04-estoque/pae-024-iniciar-verificacao-de-pedido-de-movimentacao-de-estoque.md`
+  — `docs/especificacoes/04-estoque/pae-024-iniciar-verificacao-de-pedido-de-movimentacao-de-estoque.md`
 - `Avaliar`: `"Em Verificação"` → `Aprovado` / `Rejeitado` / volta `"Em Preparação"`
-  — `docs/04-estoque/pae-025-avaliar-pedido-de-movimentacao-aprovar-rejeitar-ou-ajustar.md`
+  — `docs/especificacoes/04-estoque/pae-025-avaliar-pedido-de-movimentacao-aprovar-rejeitar-ou-ajustar.md`
 - `Agendar`: `"Aprovado"` → `"Agendado"` (criador; dentro das regras)
-  — `docs/05-agendamento/pae-027-agendar-pedido-de-movimentacao-aprovado-para-execucao-no-estoque.md`
+  — `docs/especificacoes/05-agendamento/pae-027-agendar-pedido-de-movimentacao-aprovado-para-execucao-no-estoque.md`
 - `Tentativa de execução`: `"Agendado"` → `Executado` / `"Pendente"` / `"Negado"`
-  — `docs/05-agendamento/pae-030-tentativa-de-execucao-do-pedido.md`
+  — `docs/especificacoes/05-agendamento/pae-030-tentativa-de-execucao-do-pedido.md`
 - `Cancelar agendamento`: `"Agendado"` → `"Pendente"` (criador; antecedência mínima de 1 dia)
-  — `docs/05-agendamento/pae-031-cancelar-agendamento-de-pedido-de-movimentacao-de-estoque.md`
+  — `docs/especificacoes/05-agendamento/pae-031-cancelar-agendamento-de-pedido-de-movimentacao-de-estoque.md`
 
 ## Checklist
 

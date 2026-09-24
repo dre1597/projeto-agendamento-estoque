@@ -54,6 +54,6 @@ Para <benefício>.
 
 ## Exemplo real
 
-`docs/05-agendamento/pae-028-configurar-regras-de-agendamento-de-movimentacao-no-estoque.md`
+`docs/especificacoes/05-agendamento/pae-028-configurar-regras-de-agendamento-de-movimentacao-no-estoque.md`
 — dias da semana, janela de horário (1h–8h, podendo cruzar meia-noite) e data de início
 (mínimo 15 dias à frente).
