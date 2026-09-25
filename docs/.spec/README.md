@@ -20,7 +20,8 @@ de aceite — e cada tipo de feature tem um padrão que define o que preencher n
 - `padroes/` — um padrão por tipo de feature:
   - [`criar.md`](./padroes/criar.md)
   - [`listar.md`](./padroes/listar.md)
-  - [`atualizar-visualizar.md`](./padroes/atualizar-visualizar.md)
+  - [`atualizar.md`](./padroes/atualizar.md)
+  - [`visualizar.md`](./padroes/visualizar.md)
   - [`excluir.md`](./padroes/excluir.md)
   - [`ativar-inativar.md`](./padroes/ativar-inativar.md)
   - [`historico-auditoria.md`](./padroes/historico-auditoria.md)

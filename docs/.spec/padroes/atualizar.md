@@ -1,16 +1,15 @@
-# Padrão: Atualizar / Visualizar
+# Padrão: Atualizar
 
-Edição de um registro existente e/ou tela de detalhes.
+Edição de um registro existente.
 
 ## Quando usar
 
-Quando é preciso alterar dados de um registro ou exibir seus detalhes,
-às vezes com edição condicional.
+Quando é preciso alterar dados de um registro, às vezes com edição condicional.
 
 ## Template
 
 ```markdown
-# [PAE-XXX] Atualizar <entidade> / Visualizar <entidade>
+# [PAE-XXX] Atualizar <entidade>
 
 ### **Descrição:**
 Por que os dados precisam ser ajustados ao longo do tempo.
@@ -40,22 +39,18 @@ Para <benefício>.
 
 - **Edição condicional**: quem pode editar e sob quais condições
   (ex.: só o **criador** e apenas no status `"Em Preparação"`).
-- Demais usuários: **somente leitura**.
-- **Unicidade** mantida após a edição.
+- Demais usuários: **somente leitura** (ver [`visualizar.md`](./visualizar.md)).
+- **Unicidade** mantida após a edição, sem diferenciar maiúsculas de minúsculas.
 - Validações iguais às da criação.
 - Refletir alterações na listagem imediatamente.
-- Tela de detalhes exibe quem criou, quando e o status atual.
 
 ## Checklist
 
 - [ ] Campos editáveis listados.
 - [ ] Condições de edição (quem/quando) declaradas.
-- [ ] Modo somente leitura definido para não autorizados.
 - [ ] Validações mantidas.
 - [ ] Reflexo na listagem.
 
 ## Exemplo real
 
-`docs/especificacoes/01-usuarios/pae-002-atualizar-usuarios.md` e
-`docs/especificacoes/04-estoque/pae-021-visualizar-e-editar-pedido-de-movimentacao-de-estoque.md`
-(edição só pelo criador enquanto `"Em Preparação"`).
+`docs/especificacoes/01-usuarios/pae-002-atualizar-usuarios.md`
