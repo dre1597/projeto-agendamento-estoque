@@ -16,20 +16,24 @@ Para encontrar rapidamente o que preciso sem me perder em grandes volumes de dad
 
 ### **Fluxo principal:**
 
-1. Usuário acessa a tela de listagem de setores.
-2. A tabela exibe os setores paginados com os campos `nome`, `sigla`, `status` e `descrição`.
-3. O usuário pode:
-   - Filtrar os setores por `nome` ,`sigla` e `status`.
+1. Administrador acessa a tela de listagem de setores.
+2. A tabela exibe os setores com as colunas `nome`, `sigla` e `status` (ativo/inativo).
+3. O administrador pode:
+   - Filtrar por `nome` e `sigla` (busca parcial, ignorando maiúsculas e minúsculas) e por `status` (ativo/inativo).
    - Ordenar por `nome` ou `sigla`, crescente ou decrescente.
-   - Definir quantos itens deseja ver por página (ex: 10, 25, 50).
+   - Escolher quantos itens exibir por página (10, 25, 50).
    - Navegar entre as páginas.
-4. A listagem reflete essas escolhas com dados já tratados no servidor, garantindo performance mesmo com muitos registros.
+4. O sistema retorna os dados paginados, filtrados e ordenados conforme a escolha do administrador.
+5. Quando nenhum setor corresponder aos filtros, o sistema exibe a mensagem "Nenhum resultado encontrado".
 
 ### **Critérios de aceite:**
 
+- A listagem é acessível apenas a administradores.
 - A listagem é paginada.
-- O usuário pode escolher a quantidade de itens exibidos por página (mínimo 10, opções como 10, 25, 50).
+- A tabela exibe as colunas `nome`, `sigla` e `status` (ativo/inativo).
+- É possível filtrar por `nome` e `sigla` (busca parcial, ignorando maiúsculas e minúsculas) e por `status` (ativo/inativo).
 - É possível ordenar por `nome` ou `sigla`, em ordem crescente ou decrescente.
-- É possível filtrar os setores por nome, sigla e status (busca parcial).
+- O administrador pode controlar a quantidade de itens por página (10, 25, 50).
 - A combinação de filtros, ordenação e paginação funciona de forma integrada.
-- Toda a lógica de paginação, ordenação e filtros deve ocorrer no backend, evitando manipulações inconsistentes no frontend.
+- Quando não houver resultados, o sistema exibe a mensagem "Nenhum resultado encontrado".
+- Toda a lógica de paginação, ordenação e filtros ocorre no backend para garantir performance.

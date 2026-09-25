@@ -2,7 +2,7 @@
 
 ### **Descrição:**
 
-Setores são categorias internas usadas para organizar fornecedores e produtos. Sua exclusão deve ser controlada para evitar perda de integridade nas informações do sistema.
+Setores são categorias internas usadas para organizar produtos. Sua exclusão deve ser controlada para evitar perda de integridade nas informações do sistema.
 
 ### **Objetivo:**
 
@@ -16,19 +16,24 @@ Para manter a base limpa e organizada sem impactar outras partes do sistema.
 
 ### **Fluxo principal:**
 
-1. Usuário acessa a listagem de setores.
+1. Administrador acessa a listagem de setores.
 2. Clica para excluir um setor individual.
-3. Sistema exibe uma confirmação: "Tem certeza que deseja excluir este setor? Esta ação não poderá ser desfeita."
+3. O sistema exibe confirmação e exige informar a razão da exclusão (3 a 500 caracteres):
+   **"Tem certeza que deseja excluir este setor? Esta ação não pode ser desfeita."**
 4. Se confirmado:
-   - O sistema verifica se o setor está em uso (relacionado a fornecedores, produtos, etc).
-   - Se estiver em uso, bloqueia a exclusão e informa o motivo.
-   - Se não estiver em uso, remove o setor do banco.
+   - O sistema verifica se o setor está em uso (relacionado a produtos).
+   - Se estiver em uso, bloqueia a exclusão com a mensagem "Não é possível excluir: o setor está em uso".
+   - Se não estiver, exclui o setor do banco e registra a exclusão no histórico de alterações ([PAE-013]), incluindo a razão informada.
+5. Atualiza a listagem refletindo a exclusão.
 
 ### **Critérios de aceite:**
 
-- A exclusão é feita individualmente, sem opção de múltiplas seleções.
-- O sistema solicita confirmação antes de excluir.
-- Se o setor estiver relacionado a qualquer outra entidade, a exclusão é impedida com mensagem clara.
-- Se o setor não estiver em uso, ele é removido da base.
-- A listagem é atualizada automaticamente após exclusão bem-sucedida.
-- A interface deve ser intuitiva e responsiva a diversos tipos de dispositivos.
+- Exclusão é individual, sem opção de múltiplas seleções.
+- O sistema exige confirmação antes da exclusão.
+- Impede a exclusão se o setor estiver vinculado a qualquer entidade.
+- Exibe a mensagem "Não é possível excluir: o setor está em uso" ao bloquear a exclusão.
+- Remove o setor corretamente quando permitido.
+- A exclusão gera um registro no histórico de alterações ([PAE-013]).
+- A razão da exclusão é obrigatória (3 a 500 caracteres) e fica registrada no histórico.
+- A exclusão só pode ser feita por administradores.
+- Atualiza a listagem imediatamente após a exclusão.
