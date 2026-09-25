@@ -58,6 +58,7 @@ Aplique quando fizer sentido na feature:
 - **Listagens**: paginação, filtros e ordenação processados **no backend**; itens por página 10/25/50.
 - **Consistência de status**: spec de workflow documenta a máquina de estados completa — status canônicos + tabela `de → para` com quem dispara cada transição — não só a ação isolada (ver [`padroes/fluxo-status.md`](./padroes/fluxo-status.md)).
 - **Validação de entrada**: campos obrigatórios, unicidade, limites e tipos; mensagens de erro claras.
+- **Unicidade case-insensitive**: campos únicos (ex.: `username`, nome/sigla de setor) são comparados **sem diferenciar maiúsculas de minúsculas** (`admin` = `Admin`, `Vendas` = `vendas`).
 - **Recomendações gerais ([PAE-000])**: i18n (pt/en/es), suporte a fusos horários, tema claro/escuro, responsividade (TV→celular), métricas de queries e acesso externo aos logs da API.
 
 ## Checklist geral
@@ -70,3 +71,4 @@ Aplique quando fizer sentido na feature:
 - [ ] Confirmação para ações destrutivas/irreversíveis.
 - [ ] Auditoria definida (quem/quando/o quê).
 - [ ] Validações de entrada e mensagens de erro descritas.
+- [ ] Campos únicos definidos sem diferenciar maiúsculas de minúsculas.
