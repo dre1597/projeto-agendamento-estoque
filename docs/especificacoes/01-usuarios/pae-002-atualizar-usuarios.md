@@ -25,7 +25,7 @@ Para corrigir informações ou ajustar configurações de segurança.
    - Checkbox "Administrador" (define se o usuário é administrador).
 4. Salva as alterações.
 5. O sistema valida:
-   - `username` permanece único e com 3 a 20 caracteres.
+   - `username` permanece único (ignorando maiúsculas/minúsculas) e com 3 a 20 caracteres.
    - Senha (se alterada) tem no mínimo 8 caracteres e combina letras, números e símbolos.
    - Bloqueia a atualização com a mensagem específica do erro (username duplicado, tamanho do username ou senha fora das regras).
 6. Atualiza o registro com os novos dados e registra a alteração no histórico (ver [PAE-006]).
@@ -34,7 +34,7 @@ Para corrigir informações ou ajustar configurações de segurança.
 
 - É possível atualizar `username`, `senha`, a flag de troca de senha e se um usuário é um administrador ou não.
 - `username` continua único e com 3 a 20 caracteres após a edição.
-- `username` diferencia maiúsculas de minúsculas (`admin` e `Admin` são usernames distintos).
+- `username` é único sem diferenciar maiúsculas de minúsculas (`admin` e `Admin` são considerados o mesmo username).
 - Senha nova (manual ou gerada) tem no mínimo 8 caracteres e combina letras, números e símbolos.
 - A flag "Solicitar troca de senha no primeiro login" pode ser alterada (caso a senha tenha sido alterada).
 - O checkbox "Administrador" pode ser alterado e define se o usuário é administrador.
