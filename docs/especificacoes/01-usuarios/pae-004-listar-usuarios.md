@@ -24,7 +24,7 @@ Para localizar rapidamente os usuários desejados e gerenciar o acesso.
    - Escolher quantos itens exibir por página (ex.: 10, 25, 50).
    - Navegar entre páginas.
 4. O sistema retorna os dados paginados, filtrados e ordenados conforme escolha do administrador.
-5. Quando nenhum usuário corresponder aos filtros, o sistema exibe uma mensagem clara de "nenhum resultado encontrado".
+5. Quando nenhum usuário corresponder aos filtros, o sistema exibe a mensagem "Nenhum resultado encontrado".
 
 ### **Critérios de aceite:**
 
@@ -35,5 +35,5 @@ Para localizar rapidamente os usuários desejados e gerenciar o acesso.
 - A ordenação é possível por `username` em ordem crescente e decrescente.
 - O administrador pode controlar a quantidade de itens por página (10, 25, 50).
 - A listagem atualiza corretamente ao aplicar filtros, ordenação e navegação.
-- Quando não houver resultados, o sistema exibe uma mensagem clara.
+- Quando não houver resultados, o sistema exibe a mensagem "Nenhum resultado encontrado".
 - Toda a lógica de paginação, ordenação e filtros ocorre no backend para garantir performance.

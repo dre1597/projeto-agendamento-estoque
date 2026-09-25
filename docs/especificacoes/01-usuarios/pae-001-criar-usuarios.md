@@ -23,9 +23,9 @@ Para conceder acesso ao sistema de forma segura e com controle de troca de senha
 5. Marca (ou não) o checkbox "Administrador" (vazio por padrão).
 6. Salva o usuário.
 7. O sistema:
-   - Valida se o username já existe e, se sim, bloqueia com mensagem clara.
+   - Valida se o username já existe e, se sim, bloqueia com a mensagem "Este username já está em uso".
    - Valida o tamanho do username (3 a 20 caracteres).
-   - Garante que a senha (manual ou gerada) tenha no mínimo 8 caracteres.
+   - Garante que a senha (manual ou gerada) tenha no mínimo 8 caracteres e combine letras, números e símbolos.
    - Persiste os dados com a flag de troca de senha, se marcada.
    - Cria o usuário com status ativo.
    - Registra a criação no histórico de alterações do usuário (ver [PAE-006]).
@@ -37,13 +37,15 @@ Para conceder acesso ao sistema de forma segura e com controle de troca de senha
 - `username` deve ser único e ter entre 3 e 20 caracteres.
 - `username` diferencia maiúsculas de minúsculas (`admin` e `Admin` são usernames distintos).
 - A senha pode ser inserida manualmente ou gerada automaticamente.
-- A senha (manual ou gerada) tem no mínimo 8 caracteres.
-- A senha gerada automaticamente combina letras, números e símbolos.
+- A senha (manual ou gerada) tem no mínimo 8 caracteres e combina letras, números e símbolos.
 - Existe um checkbox "Solicitar troca de senha no primeiro login" (vazio por padrão).
 - Existe um checkbox "Administrador" (vazio por padrão) que define se o usuário é administrador.
 - Ao marcar a opção de troca de senha, o sistema exige que o usuário troque a senha ao fazer o primeiro login.
 - O usuário é criado com status ativo.
 - O cadastro só pode ser feito por administradores.
 - A criação gera um registro no histórico de alterações do usuário (ver [PAE-006]).
-- Mensagens de erro claras para `username` duplicado, tamanho inválido e senha com menos de 8 caracteres.
+- Mensagens de erro:
+   - username duplicado: "Este username já está em uso";
+   - tamanho do username: "O username deve ter entre 3 e 20 caracteres";
+   - senha fora das regras: "A senha deve ter no mínimo 8 caracteres e conter letras, números e símbolos".
 - O novo usuário aparece corretamente na listagem após o cadastro.

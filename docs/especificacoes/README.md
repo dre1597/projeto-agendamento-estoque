@@ -15,6 +15,10 @@
 - [PAE-005 — Ativar e inativar usuários](./01-usuarios/pae-005-ativar-e-inativar-usuarios.md)
 - [PAE-006 — Rastrear histórico de alterações de usuários](./01-usuarios/pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)
 - [PAE-007 — Login](./01-usuarios/pae-007-login.md)
+- [PAE-032 — Alterar senha no primeiro login](./01-usuarios/pae-032-alterar-senha-no-primeiro-login.md)
+- [PAE-033 — Perfil de usuário](./01-usuarios/pae-033-perfil-de-usuario.md)
+- [PAE-034 — Desbloquear usuário](./01-usuarios/pae-034-desbloquear-usuario.md)
+- [PAE-035 — Sessão e expiração do login](./01-usuarios/pae-035-sessao-e-expiracao-do-login.md)
 
 ### SETORES
 

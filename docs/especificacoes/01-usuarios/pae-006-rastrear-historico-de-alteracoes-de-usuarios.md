@@ -24,14 +24,16 @@ Para entender o que foi modificado, por quem e quando.
        - Criação: "o usuário foi criado".
        - Atualização: os campos alterados, com valor anterior → valor novo.
        - Exclusão: "o usuário foi excluído".
-     - Razão do evento: obrigatória na exclusão (3 a 500 caracteres), opcional na atualização e não se aplica à criação.
+     - Campos sensíveis (ex.: `senha`) não guardam o valor real: aparecem como `[senha antiga] → [senha nova]`.
+     - Razão do evento: obrigatória na exclusão e no desbloqueio (3 a 500 caracteres), opcional na atualização e não se aplica à criação.
 2. Na tela de detalhes do usuário, o administrador pode acessar o histórico.
 3. O histórico exibe os eventos do mais recente para o mais antigo.
 
 ### **Critérios de aceite:**
 
 - Cada alteração na base de usuários gera um registro no histórico.
-- O histórico salva: usuário afetado, campo alterado, valor anterior, valor novo, data/hora, quem fez (username) e a razão do evento (obrigatória apenas na exclusão).
+- O histórico salva: usuário afetado, campo alterado, valor anterior, valor novo, data/hora, quem fez (username) e a razão do evento (obrigatória na exclusão e no desbloqueio).
+- Campos sensíveis (ex.: `senha`) aparecem no histórico como `[senha antiga] → [senha nova]`, sem o valor real.
 - A criação do usuário também gera um evento no histórico.
 - A exclusão do usuário também é registrada no histórico, incluindo a razão (obrigatória, de 3 a 500 caracteres).
 - O histórico sobrevive à exclusão do usuário (usa `username` como string, sem vínculo com o cadastro).

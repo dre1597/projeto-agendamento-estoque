@@ -22,7 +22,7 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
    **"Tem certeza que deseja excluir este usuário? Esta ação não pode ser desfeita."**
 4. Se confirmado:
    - O sistema verifica se o usuário está em uso (ex.: criador de pedidos de movimentação, responsável por verificação ou por agendamento).
-   - Se estiver em uso, bloqueia a exclusão e informa o motivo.
+   - Se estiver em uso, bloqueia a exclusão com a mensagem "Não é possível excluir: o usuário está em uso".
    - Se não estiver, exclui o usuário do banco e registra a exclusão no histórico de alterações ([PAE-006]), incluindo a razão informada.
 5. Atualiza a listagem refletindo a exclusão.
 
@@ -31,7 +31,7 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
 - Exclusão é individual, sem opção de múltiplas seleções.
 - O sistema exige confirmação antes da exclusão.
 - Impede a exclusão se o usuário estiver vinculado a qualquer entidade ou processo.
-- Exibe mensagem clara ao bloquear exclusão.
+- Exibe a mensagem "Não é possível excluir: o usuário está em uso" ao bloquear a exclusão.
 - Remove o usuário corretamente quando permitido.
 - A exclusão gera um registro no histórico de alterações ([PAE-006]).
 - A razão da exclusão é obrigatória (3 a 500 caracteres) e fica registrada no histórico.
