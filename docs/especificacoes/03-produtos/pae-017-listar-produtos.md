@@ -16,22 +16,25 @@ Para encontrar e analisar facilmente os itens registrados.
 
 ### **Fluxo principal:**
 
-1. Usuário acessa a tela de listagem de produtos.
-2. A tabela exibe os produtos com colunas: nome, quantidade, valor e setores.
+1. Usuário autenticado acessa a tela de listagem de produtos.
+2. A tabela exibe os produtos com as colunas `nome`, `quantidade atual`, `valor unitário` e `setores relacionados`.
 3. O usuário pode:
-   - Filtrar por nome (busca parcial).
-   - Filtrar por setor (um ou mais).
-   - Ordenar por nome, quantidade ou valor (asc/desc).
-   - Escolher quantos itens deseja ver por página (10, 25, 50).
-   - Navegar entre páginas.
-4. O sistema retorna os dados aplicando todos os filtros, ordenações e paginação **no backend**.
+   - Filtrar por `nome` (busca parcial, ignorando maiúsculas e minúsculas).
+   - Filtrar por `setores relacionados` (um ou mais; retorna os produtos que tenham qualquer um dos setores selecionados, ativos ou inativos).
+   - Ordenar por `nome`, `quantidade atual` ou `valor unitário` (crescente/decrescente).
+   - Escolher quantos itens exibir por página (10, 25, 50).
+   - Navegar entre as páginas.
+4. O sistema retorna os dados paginados, filtrados e ordenados conforme a escolha do usuário.
+5. Quando nenhum produto corresponder aos filtros, o sistema exibe a mensagem "Nenhum resultado encontrado".
 
 ### **Critérios de aceite:**
 
-- A listagem é paginada e controlada pelo usuário.
-- O usuário pode escolher 10, 25 ou 50 itens por página.
-- É possível filtrar produtos por nome (texto livre).
-- É possível filtrar produtos por um ou mais setores.
-- É possível ordenar a lista por nome, quantidade ou valor (ascendente/descendente).
+- A listagem é acessível a qualquer usuário autenticado.
+- A listagem é paginada e o usuário controla os itens por página (10, 25, 50).
+- A tabela exibe as colunas `nome`, `quantidade atual`, `valor unitário` e `setores relacionados`.
+- É possível filtrar por `nome` (busca parcial, ignorando maiúsculas e minúsculas).
+- É possível filtrar por `setores relacionados` (um ou mais; retorna os produtos que tenham qualquer um dos setores selecionados, ativos ou inativos).
+- É possível ordenar por `nome`, `quantidade atual` ou `valor unitário`, em ordem crescente ou decrescente.
+- A combinação de filtros, ordenação e paginação funciona de forma integrada.
+- Quando não houver resultados, o sistema exibe a mensagem "Nenhum resultado encontrado".
 - Toda a lógica de filtro, ordenação e paginação é executada no backend.
-- A interface reflete imediatamente as mudanças aplicadas.

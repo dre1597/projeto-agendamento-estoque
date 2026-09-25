@@ -19,6 +19,7 @@
 - [PAE-033 — Perfil de usuário](./01-usuarios/pae-033-perfil-de-usuario.md)
 - [PAE-034 — Desbloquear usuário](./01-usuarios/pae-034-desbloquear-usuario.md)
 - [PAE-035 — Sessão e expiração do login](./01-usuarios/pae-035-sessao-e-expiracao-do-login.md)
+- [PAE-036 — Visualizar usuário](./01-usuarios/pae-036-visualizar-usuario.md)
 
 ### SETORES
 
@@ -28,14 +29,16 @@
 - [PAE-011 — Listar setores](./02-setores/pae-011-listar-setores.md)
 - [PAE-012 — Ativar e inativar setores](./02-setores/pae-012-ativar-e-inativar-setores.md)
 - [PAE-013 — Rastrear histórico de alterações de setores](./02-setores/pae-013-rastrear-historico-de-alteracoes-de-setores.md)
+- [PAE-037 — Visualizar setor](./02-setores/pae-037-visualizar-setor.md)
 
 ### PRODUTOS
 
-- [PAE-014 — Cadastrar produtos](./03-produtos/pae-014-cadastrar-produtos.md)
+- [PAE-014 — Criar produtos](./03-produtos/pae-014-criar-produtos.md)
 - [PAE-015 — Atualizar produtos](./03-produtos/pae-015-atualizar-produtos.md)
 - [PAE-016 — Excluir produtos](./03-produtos/pae-016-excluir-produtos.md)
 - [PAE-017 — Listar produtos](./03-produtos/pae-017-listar-produtos.md)
 - [PAE-018 — Rastrear histórico de alterações de produtos](./03-produtos/pae-018-rastrear-historico-de-alteracoes-de-produtos.md)
+- [PAE-038 — Visualizar produto](./03-produtos/pae-038-visualizar-produto.md)
 
 ### ESTOQUE
 

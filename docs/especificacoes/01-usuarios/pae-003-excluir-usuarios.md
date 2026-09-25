@@ -16,7 +16,7 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
 
 ### **Fluxo principal:**
 
-1. Administrador acessa a listagem de usuários.
+1. Administrador acessa a listagem de usuários ou os detalhes de um usuário.
 2. Clica para excluir um usuário individualmente.
 3. O sistema exibe confirmação e exige informar a razão da exclusão (3 a 500 caracteres):
    **"Tem certeza que deseja excluir este usuário? Esta ação não pode ser desfeita."**
@@ -29,6 +29,7 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
 ### **Critérios de aceite:**
 
 - Exclusão é individual, sem opção de múltiplas seleções.
+- A exclusão pode ser acionada pela listagem ou pelos detalhes do usuário.
 - O sistema exige confirmação antes da exclusão.
 - Impede a exclusão se o usuário estiver vinculado a qualquer entidade ou processo.
 - Exibe a mensagem "Não é possível excluir: o usuário está em uso" ao bloquear a exclusão.

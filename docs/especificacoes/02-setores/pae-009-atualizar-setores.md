@@ -23,7 +23,7 @@ Para manter as informações consistentes e atualizadas.
 5. O sistema:
    - Remove espaços extras (trim) do `nome` e da `sigla`, e normaliza a `sigla` para maiúsculas.
    - Valida se o `nome` ou a `sigla` já pertencem a **outro** setor (ignorando maiúsculas/minúsculas) e, se sim, bloqueia com a mensagem correspondente.
-   - Valida que nome e sigla continuam obrigatórios e que os tamanhos são respeitados: nome (≤100), sigla (≤10), descrição (≤255).
+   - Valida que nome e sigla continuam obrigatórios e que os tamanhos são respeitados: nome (≤100), sigla (≤3), descrição (≤255).
    - Persiste os dados atualizados.
    - Registra a alteração no histórico de alterações do setor (ver [PAE-013]).
    - Exibe a versão atualizada na listagem.
@@ -35,13 +35,13 @@ Para manter as informações consistentes e atualizadas.
 - Nome e sigla permanecem únicos, sem diferenciar maiúsculas de minúsculas (`Vendas` e `vendas` são considerados o mesmo setor); a comparação ignora o próprio setor que está sendo editado.
 - O nome é salvo sem espaços nas pontas (trim); a sigla é salva sem espaços nas pontas e normalizada para maiúsculas.
 - A `descrição` pode ser deixada vazia/limpa na edição.
-- Validações de tamanho continuam aplicadas: nome (≤100), sigla (≤10), descrição (≤255).
+- Validações de tamanho continuam aplicadas: nome (≤100), sigla (≤3), descrição (≤255).
 - A edição só pode ser feita por administradores.
 - A atualização gera um registro no histórico de alterações do setor (ver [PAE-013]).
 - Mensagens de erro:
   - nome duplicado: "Já existe um setor com este nome";
   - sigla duplicada: "Já existe um setor com esta sigla";
   - nome acima do limite: "O nome deve ter no máximo 100 caracteres";
-  - sigla acima do limite: "A sigla deve ter no máximo 10 caracteres";
+  - sigla acima do limite: "A sigla deve ter no máximo 3 caracteres";
   - descrição acima do limite: "A descrição deve ter no máximo 255 caracteres".
 - O sistema salva corretamente os dados atualizados e exibe a versão atualizada na listagem.
