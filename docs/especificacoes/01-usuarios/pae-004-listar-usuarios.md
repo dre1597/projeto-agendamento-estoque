@@ -16,20 +16,24 @@ Para localizar rapidamente os usuários desejados e gerenciar o acesso.
 
 ### **Fluxo principal:**
 
-1. Usuário acessa a tela de listagem de usuários.
-2. A tabela exibe usuários com colunas básicas: `username`, `status` (ativo/inativo).
-3. O usuário pode:
-   - Filtrar por `username` e `status`.
+1. Administrador acessa a tela de listagem de usuários.
+2. A tabela exibe usuários com colunas básicas: `username`, `status` (ativo/inativo/bloqueado) e `administrador`.
+3. O administrador pode:
+   - Filtrar por `username` (busca parcial, ignorando maiúsculas e minúsculas) e `status`.
    - Ordenar por `username` (asc/desc).
-   - Escolher quantos itens exibir por página (ex: 10, 25, 50).
+   - Escolher quantos itens exibir por página (ex.: 10, 25, 50).
    - Navegar entre páginas.
-4. O sistema retorna os dados paginados, filtrados e ordenados conforme escolha do usuário.
+4. O sistema retorna os dados paginados, filtrados e ordenados conforme escolha do administrador.
+5. Quando nenhum usuário corresponder aos filtros, o sistema exibe uma mensagem clara de "nenhum resultado encontrado".
 
 ### **Critérios de aceite:**
 
+- A listagem é acessível apenas a administradores.
 - A listagem é paginada.
-- É possível filtrar por `username` (busca parcial) e `status` (ativo/inativo).
+- A tabela exibe as colunas `username`, `status` (ativo/inativo/bloqueado) e `administrador`.
+- É possível filtrar por `username` (busca parcial, ignorando maiúsculas e minúsculas) e `status` (ativo/inativo/bloqueado).
 - A ordenação é possível por `username` em ordem crescente e decrescente.
-- O usuário pode controlar a quantidade de itens por página (10, 25, 50).
+- O administrador pode controlar a quantidade de itens por página (10, 25, 50).
 - A listagem atualiza corretamente ao aplicar filtros, ordenação e navegação.
+- Quando não houver resultados, o sistema exibe uma mensagem clara.
 - Toda a lógica de paginação, ordenação e filtros ocorre no backend para garantir performance.

@@ -19,21 +19,27 @@ Para corrigir informações ou ajustar configurações de segurança.
 1. Administrador acessa a listagem de usuários.
 2. Seleciona o usuário que deseja editar.
 3. Altera um ou mais campos:
-   - `username` (mantendo a unicidade).
-   - `senha` (pode ser manual ou gerar automaticamente).
+   - `username` (mantendo a unicidade e o tamanho de 3 a 20 caracteres).
+   - `senha` (pode ser manual ou gerada automaticamente; se gerada, aparece no próprio campo de senha).
    - Flag "Solicitar troca de senha no primeiro login" (caso tenha alterado a senha).
-   - Se o usuário é um administrador ou não.
+   - Checkbox "Administrador" (define se o usuário é administrador).
 4. Salva as alterações.
 5. O sistema valida:
-   - `username` permanece único.
-   - Senha (se alterada) atende aos critérios mínimos.
-6. Atualiza o registro com os novos dados.
+   - `username` permanece único e com 3 a 20 caracteres.
+   - Senha (se alterada) tem no mínimo 8 caracteres.
+   - Bloqueia a atualização com mensagem clara se alguma validação falhar.
+6. Atualiza o registro com os novos dados e registra a alteração no histórico (ver [PAE-006]).
 
 ### **Critérios de aceite:**
 
 - É possível atualizar `username`, `senha`, a flag de troca de senha e se um usuário é um administrador ou não.
-- `username` continua sendo único após a edição.
-- Senha nova deve seguir as regras de segurança (mínimo 8 caracteres, etc).
-- A flag para troca de senha no primeiro login pode ser alterada (caso a senha tenhado sido alterada).
+- `username` continua único e com 3 a 20 caracteres após a edição.
+- `username` diferencia maiúsculas de minúsculas (`admin` e `Admin` são usernames distintos).
+- Senha nova (manual ou gerada) tem no mínimo 8 caracteres.
+- A senha gerada automaticamente combina letras, números e símbolos.
+- A flag "Solicitar troca de senha no primeiro login" pode ser alterada (caso a senha tenha sido alterada).
+- O checkbox "Administrador" pode ser alterado e define se o usuário é administrador.
 - Atualização só pode ser feita por administradores.
+- A atualização gera um registro no histórico de alterações do usuário (ver [PAE-006]).
+- Mensagens de erro claras para `username` duplicado/tamanho inválido e senha com menos de 8 caracteres.
 - A listagem de usuários reflete as alterações imediatamente após salvar.

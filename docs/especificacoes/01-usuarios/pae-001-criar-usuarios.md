@@ -35,6 +35,7 @@ Para conceder acesso ao sistema de forma segura e com controle de troca de senha
 
 - É possível cadastrar um usuário com `username` e `senha`.
 - `username` deve ser único e ter entre 3 e 20 caracteres.
+- `username` diferencia maiúsculas de minúsculas (`admin` e `Admin` são usernames distintos).
 - A senha pode ser inserida manualmente ou gerada automaticamente.
 - A senha (manual ou gerada) tem no mínimo 8 caracteres.
 - A senha gerada automaticamente combina letras, números e símbolos.
