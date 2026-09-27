@@ -5,6 +5,7 @@
 ### Geral
 
 - [PAE-000 — Recomendações gerais](./00-geral/pae-000-recomendacoes-gerais.md)
+- [PAE-045 — Relógio do sistema](./00-geral/pae-045-relogio-do-sistema.md)
 
 ### USUÁRIOS
 
@@ -44,17 +45,23 @@
 
 - [PAE-019 — Criar pedido de movimentação de estoque](./04-estoque/pae-019-criar-pedido-de-movimentacao-de-estoque.md)
 - [PAE-020 — Listar pedidos de movimentação de estoque](./04-estoque/pae-020-listar-pedidos-de-movimentacao-de-estoque.md)
-- [PAE-021 — Visualizar e editar pedido de movimentação de estoque](./04-estoque/pae-021-visualizar-e-editar-pedido-de-movimentacao-de-estoque.md)
+- [PAE-021 — Atualizar pedido de movimentação de estoque](./04-estoque/pae-021-atualizar-pedido-de-movimentacao-de-estoque.md)
 - [PAE-022 — Remover pedido de movimentação de estoque](./04-estoque/pae-022-remover-pedido-de-movimentacao-de-estoque.md)
 - [PAE-023 — Requisitar um pedido](./04-estoque/pae-023-requisitar-um-pedido.md)
 - [PAE-024 — Iniciar verificação de pedido de movimentação de estoque](./04-estoque/pae-024-iniciar-verificacao-de-pedido-de-movimentacao-de-estoque.md)
 - [PAE-025 — Avaliar pedido de movimentação: Aprovar, Rejeitar ou Ajustar](./04-estoque/pae-025-avaliar-pedido-de-movimentacao-aprovar-rejeitar-ou-ajustar.md)
 - [PAE-026 — Marcar pedido de movimentação como executado](./04-estoque/pae-026-marcar-pedido-de-movimentacao-como-executado.md)
+- [PAE-040 — Rastrear histórico de alterações de pedidos de movimentação de estoque](./04-estoque/pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)
+- [PAE-042 — Visualizar pedido de movimentação de estoque](./04-estoque/pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)
+- [PAE-044 — Sinalizar verificação de estoque para ajuste](./04-estoque/pae-044-sinalizar-verificacao-de-estoque-para-ajuste.md)
 
 ### AGENDAMENTO
 
-- [PAE-027 — Agendar pedido de movimentação aprovado para execução no estoque](./05-agendamento/pae-027-agendar-pedido-de-movimentacao-aprovado-para-execucao-no-estoque.md)
+- [PAE-027 — Agendar pedido de movimentação para execução no estoque](./05-agendamento/pae-027-agendar-pedido-de-movimentacao-para-execucao-no-estoque.md)
 - [PAE-028 — Configurar regras de agendamento de movimentação no estoque](./05-agendamento/pae-028-configurar-regras-de-agendamento-de-movimentacao-no-estoque.md)
 - [PAE-029 — Listar agendamentos de execução de pedidos de movimentação](./05-agendamento/pae-029-listar-agendamentos-de-execucao-de-pedidos-de-movimentacao.md)
-- [PAE-030 — Tentativa de execução do pedido](./05-agendamento/pae-030-tentativa-de-execucao-do-pedido.md)
+- [PAE-030 — Registrar execução não realizada do pedido](./05-agendamento/pae-030-registrar-execucao-nao-realizada-do-pedido.md)
 - [PAE-031 — Cancelar agendamento de pedido de movimentação de estoque](./05-agendamento/pae-031-cancelar-agendamento-de-pedido-de-movimentacao-de-estoque.md)
+- [PAE-039 — Negar pedido de movimentação de estoque](./05-agendamento/pae-039-negar-pedido-de-movimentacao-de-estoque.md)
+- [PAE-041 — Rastrear histórico de agendamentos](./05-agendamento/pae-041-rastrear-historico-do-agendamento.md)
+- [PAE-043 — Visualizar agendamento](./05-agendamento/pae-043-visualizar-agendamento.md)
