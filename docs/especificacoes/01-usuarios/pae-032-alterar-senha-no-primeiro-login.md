@@ -16,7 +16,7 @@ Para acessar o sistema com uma senha própria.
 
 ### **Fluxo principal:**
 
-1. Usuário faz login com as credenciais e o sistema identifica a flag de troca de senha ativa (ver [PAE-007]).
+1. Usuário faz login com as credenciais e o sistema identifica a flag de troca de senha ativa (ver [PAE-007](pae-007-login.md)).
 2. O sistema redireciona o usuário para a tela de alteração de senha e não libera o restante do acesso até a troca ser concluída.
 3. Usuário informa a nova senha.
 4. O sistema valida a nova senha pelas mesmas regras do cadastro (mínimo de 8 caracteres, com letras, números e símbolos).

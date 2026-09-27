@@ -23,7 +23,7 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
 4. Se confirmado:
    - O sistema verifica se o usuário está em uso (ex.: criador de pedidos de movimentação, responsável por verificação ou por agendamento).
    - Se estiver em uso, bloqueia a exclusão com a mensagem "Não é possível excluir: o usuário está em uso".
-   - Se não estiver, exclui o usuário do banco e registra a exclusão no histórico de alterações ([PAE-006]), incluindo a razão informada.
+   - Se não estiver, exclui o usuário do banco e registra a exclusão no histórico de alterações ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)), incluindo a razão informada.
 5. Atualiza a listagem refletindo a exclusão.
 
 ### **Critérios de aceite:**
@@ -34,6 +34,6 @@ Para manter o cadastro limpo sem comprometer dados ou processos vinculados.
 - Impede a exclusão se o usuário estiver vinculado a qualquer entidade ou processo.
 - Exibe a mensagem "Não é possível excluir: o usuário está em uso" ao bloquear a exclusão.
 - Remove o usuário corretamente quando permitido.
-- A exclusão gera um registro no histórico de alterações ([PAE-006]).
+- A exclusão gera um registro no histórico de alterações ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 - A razão da exclusão é obrigatória (3 a 500 caracteres) e fica registrada no histórico.
 - Atualiza a listagem imediatamente após exclusão.

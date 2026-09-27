@@ -22,7 +22,7 @@ Para concluir a análise ou solicitar ajustes antes da decisão final.
    - **Rejeitar pedido**
    - **Devolver para ajuste**
 3. Para cada ação:
-   - O sistema solicita confirmação com mensagem clara.
+   - O sistema solicita confirmação, com a mensagem conforme a ação: aprovar → **"Você deseja aprovar este pedido?"**; rejeitar → **"Você deseja rejeitar este pedido?"**; devolver → **"Você deseja devolver este pedido para ajuste?"**
    - A ação é registrada com data/hora e quem realizou.
    - O status do pedido é alterado conforme a ação:
      - **Aprovado:** segue o fluxo para agendamento e execução.
@@ -34,6 +34,7 @@ Para concluir a análise ou solicitar ajustes antes da decisão final.
 - Apenas administradores visualizam os três botões na tela de detalhes quando o pedido estiver em `"Em Verificação"`.
 - Cada ação exige confirmação explícita antes de ser realizada.
 - A ação executada é registrada com data/hora e usuário responsável.
+- Cada ação é registrada no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 - "Devolver para ajuste" volta o pedido para `"Em Preparação"`, mas bloqueia a exclusão mesmo sendo esse o status atual.
 - "Aprovar" altera o status para `"Aprovado"` e bloqueia edições.
 - "Rejeitar" altera o status para `"Rejeitado"` e bloqueia edições.

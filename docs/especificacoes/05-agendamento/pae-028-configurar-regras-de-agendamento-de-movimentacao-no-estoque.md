@@ -8,7 +8,7 @@ Ao selecionar os dias da semana (ex.: segunda, quarta e sexta), a configuração
 
 _"Exemplo: selecionar segunda com horário 20h–4h significa da segunda às 20h até terça às 4h."_
 
-Todo horário e prazo são tratados no **horário do sistema** ([PAE-045]).
+Todo horário e prazo são tratados no **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 
 ### **Objetivo:**
 
@@ -40,7 +40,7 @@ Para controlar o funcionamento do agendamento e permitir que os usuários planej
 - A data inicial para aplicar a configuração deve ser no mínimo 15 dias no futuro.
 - Após salvar, a configuração fica ativa somente a partir da data definida.
 - A configuração anterior permanece válida até a data de início da nova configuração.
-- Todas as janelas, datas e prazos são calculados no **horário do sistema** ([PAE-045]), independentemente do fuso do usuário.
+- Todas as janelas, datas e prazos são calculados no **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)), independentemente do fuso do usuário.
 - O sistema rejeita configurações inválidas e exibe a mensagem correspondente:
   - data inicial fora do prazo: "A data inicial deve ser no mínimo 15 dias à frente";
   - janela fora da faixa: "A janela deve ter entre 1 e 8 horas";

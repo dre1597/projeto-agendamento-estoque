@@ -16,20 +16,20 @@ Para ajustar qualquer dado antes de enviá-lo para verificação.
 
 ### **Fluxo principal:**
 
-1. Criador acessa os detalhes do pedido ([PAE-042]).
+1. Criador acessa os detalhes do pedido ([PAE-042](pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)).
 2. Se o status for `"Em Preparação"`:
    - Os campos ficam editáveis: tipo (adição/remoção/verificação), produto, quantidade (inteiro positivo), razão (3 a 100 caracteres) e observação (opcional, até 500 caracteres).
    - Um botão permite salvar as alterações.
 3. Se o status não for `"Em Preparação"`, a edição não é permitida.
-4. O sistema valida os campos com as mesmas regras da criação ([PAE-019]) e salva.
+4. O sistema valida os campos com as mesmas regras da criação ([PAE-019](pae-019-criar-pedido-de-movimentacao-de-estoque.md)) e salva.
 
 ### **Critérios de aceite:**
 
 - Apenas o criador pode editar o pedido.
 - A edição só é possível enquanto o status for `"Em Preparação"`.
-- Os campos editáveis são: tipo, produto, quantidade, razão e observação, com as mesmas validações da criação ([PAE-019]).
+- Os campos editáveis são: tipo, produto, quantidade, razão e observação, com as mesmas validações da criação ([PAE-019](pae-019-criar-pedido-de-movimentacao-de-estoque.md)).
 - O sistema salva as alterações e reflete na listagem.
-- Mensagens de erro iguais às da criação ([PAE-019]).
+- Mensagens de erro iguais às da criação ([PAE-019](pae-019-criar-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 

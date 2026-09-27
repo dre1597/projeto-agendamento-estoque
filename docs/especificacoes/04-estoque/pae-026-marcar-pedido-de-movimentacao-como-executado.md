@@ -18,21 +18,22 @@ Para que o estoque seja atualizado com o que aconteceu de fato.
 
 1. Usuário que executou o pedido acessa os detalhes de um pedido com status `"Agendado"`.
 2. Um botão é exibido: **"Marcar como executado"**.
-3. Ao clicar, o sistema exibe uma confirmação e pede a confirmação da ação.
+3. Ao clicar, o sistema exibe a confirmação: **"Você deseja confirmar que a execução foi realizada?"**
 4. Confirmando:
-   - O sistema aplica a movimentação ao estoque (entrada/saída), atualizando o saldo e gravando o registro no ledger.
+   - O sistema aplica a movimentação ao estoque (entrada/saída), atualizando o saldo e gravando o registro no ledger. Isso vale para **adição e remoção**; a **verificação** não altera o saldo.
    - O status do pedido muda para `"Executado"` (fim).
    - Ficam registrados data/hora e quem executou.
-5. Se for uma **remoção** e não houver saldo suficiente, o sistema **não aplica** a movimentação e orienta o usuário a registrar a execução como não realizada ([PAE-030]).
+5. Se for uma **remoção** e não houver saldo suficiente, o sistema **não aplica** a movimentação e orienta o usuário a registrar a execução como não realizada ([PAE-030](../05-agendamento/pae-030-registrar-execucao-nao-realizada-do-pedido.md)).
 
 ### **Critérios de aceite:**
 
 - O botão aparece apenas para pedidos com status `"Agendado"`.
 - Qualquer usuário que executou o pedido pode registrar a execução.
 - O sistema exige confirmação antes de executar.
-- Ao confirmar, a movimentação é aplicada ao estoque (saldo atualizado + registro no ledger).
+- Ao confirmar, a movimentação é aplicada ao estoque (saldo atualizado + registro no ledger) — apenas em **adição/remoção**; a **verificação** não altera o saldo.
+- A execução é registrada no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 - O status muda para `"Executado"` e o pedido fica finalizado, sem novas alterações.
-- Numa remoção sem saldo suficiente, a movimentação **não** é aplicada e a orientação é registrar como não realizada ([PAE-030]).
+- Numa remoção sem saldo suficiente, a movimentação **não** é aplicada e a orientação é registrar como não realizada ([PAE-030](../05-agendamento/pae-030-registrar-execucao-nao-realizada-do-pedido.md)).
 - O saldo nunca fica negativo.
 
 ### **Máquina de estados (contexto):**

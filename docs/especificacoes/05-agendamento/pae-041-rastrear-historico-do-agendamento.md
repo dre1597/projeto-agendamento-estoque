@@ -24,7 +24,7 @@ Para entender o que aconteceu com ele, por quem e quando.
        - Agendado: o horário escolhido.
        - Cancelado: o cancelamento do agendamento.
        - Executado: o resultado (realizado ou não realizado) e a razão, quando houver.
-2. Na tela de detalhes do agendamento ([PAE-043]), o usuário pode acessar o histórico.
+2. Na tela de detalhes do agendamento ([PAE-043](pae-043-visualizar-agendamento.md)), o usuário pode acessar o histórico.
 3. O histórico exibe os eventos do mais recente para o mais antigo.
 
 ### **Critérios de aceite:**
@@ -34,7 +34,7 @@ Para entender o que aconteceu com ele, por quem e quando.
 - Agendamento, cancelamento e execução geram evento no histórico.
 - A execução registra o resultado (realizado ou não realizado) e a razão, quando houver.
 - O histórico pertence à **base de agendamentos** (global) e permanece para auditoria.
-- A data/hora dos eventos é a do **horário do sistema** ([PAE-045]).
+- A data/hora dos eventos é a do **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 - O histórico pode ser consultado por qualquer usuário autenticado.
 - O histórico é ordenado do mais recente para o mais antigo.
 - O histórico é imutável: seus registros não podem ser editados nem excluídos.

@@ -2,7 +2,7 @@
 
 ### **Descrição:**
 
-Um usuário é bloqueado automaticamente ao atingir o limite de tentativas de login (ver [PAE-007]). Para devolver o acesso, o administrador precisa desbloqueá-lo.
+Um usuário é bloqueado automaticamente ao atingir o limite de tentativas de login (ver [PAE-007](pae-007-login.md)). Para devolver o acesso, o administrador precisa desbloqueá-lo.
 
 ### **Objetivo:**
 
@@ -22,7 +22,7 @@ Para devolver o acesso a ele.
 4. Confirmado:
    - O status do usuário volta para ativo.
    - O contador de tentativas de login é zerado.
-   - A ação é registrada no histórico ([PAE-006]), incluindo a razão.
+   - A ação é registrada no histórico ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)), incluindo a razão.
 5. A listagem ou os detalhes refletem o novo status.
 
 ### **Critérios de aceite:**
@@ -34,5 +34,5 @@ Para devolver o acesso a ele.
 - A razão do desbloqueio é obrigatória (3 a 500 caracteres).
 - Ao desbloquear, o status do usuário volta para ativo.
 - Ao desbloquear, o contador de tentativas de login é zerado.
-- A ação gera um registro no histórico de alterações ([PAE-006]), incluindo a razão.
+- A ação gera um registro no histórico de alterações ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)), incluindo a razão.
 - O novo status é refletido imediatamente na listagem e nos detalhes.

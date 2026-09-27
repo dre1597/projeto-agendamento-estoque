@@ -16,9 +16,9 @@ Para organizar o que precisa de ajuste sem que o sistema decida isso sozinho.
 
 ### **Fluxo principal:**
 
-1. Administrador acessa os detalhes de um pedido de verificação ([PAE-042]).
+1. Administrador acessa os detalhes de um pedido de verificação ([PAE-042](pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)).
 2. O sistema exibe a ação de **marcar** ou **remover a marcação**.
-3. Ao marcar `"requer ajuste"`, o pedido fica **destacado** na listagem ([PAE-020]) e nos detalhes ([PAE-042]).
+3. Ao marcar `"requer ajuste"`, o pedido fica **destacado** na listagem ([PAE-020](pae-020-listar-pedidos-de-movimentacao-de-estoque.md)) e nos detalhes ([PAE-042](pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)).
 4. Ao remover a marcação, o destaque some.
 5. A marcação nunca é feita automaticamente: só por ação do administrador.
 
@@ -26,9 +26,9 @@ Para organizar o que precisa de ajuste sem que o sistema decida isso sozinho.
 
 - Apenas administradores podem **marcar** ou **remover** a marcação.
 - A marcação é sempre **manual**; o sistema não marca nem desmarca sozinho.
-- O pedido marcado aparece com **destaque** na listagem ([PAE-020]) e nos detalhes ([PAE-042]).
+- O pedido marcado aparece com **destaque** na listagem ([PAE-020](pae-020-listar-pedidos-de-movimentacao-de-estoque.md)) e nos detalhes ([PAE-042](pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)).
 - A marcação pode ser **removida a qualquer momento** pelo administrador.
-- A ação (marcar/remover) é registrada no histórico do pedido ([PAE-040]).
+- A ação (marcar/remover) é registrada no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 

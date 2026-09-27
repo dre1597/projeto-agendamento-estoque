@@ -28,7 +28,7 @@ Para corrigir informações ou ajustar configurações de segurança.
    - `username` permanece único (ignorando maiúsculas/minúsculas) e com 3 a 20 caracteres.
    - Senha (se alterada) tem no mínimo 8 caracteres e combina letras, números e símbolos.
    - Bloqueia a atualização com a mensagem específica do erro (username duplicado, tamanho do username ou senha fora das regras).
-6. Atualiza o registro com os novos dados e registra a alteração no histórico (ver [PAE-006]).
+6. Atualiza o registro com os novos dados e registra a alteração no histórico (ver [PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 
 ### **Critérios de aceite:**
 
@@ -39,7 +39,7 @@ Para corrigir informações ou ajustar configurações de segurança.
 - A flag "Solicitar troca de senha no primeiro login" pode ser alterada (caso a senha tenha sido alterada).
 - O checkbox "Administrador" pode ser alterado e define se o usuário é administrador.
 - Atualização só pode ser feita por administradores.
-- A atualização gera um registro no histórico de alterações do usuário (ver [PAE-006]).
+- A atualização gera um registro no histórico de alterações do usuário (ver [PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 - Mensagens de erro:
    - username duplicado: "Este username já está em uso";
    - tamanho do username: "O username deve ter entre 3 e 20 caracteres";

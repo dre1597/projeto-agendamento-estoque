@@ -33,6 +33,6 @@ Para acompanhar os agendamentos feitos e gerenciar os horários disponíveis.
 - É possível filtrar por produto (busca parcial, ignorando maiúsculas e minúsculas), por status do pedido, por usuário que agendou e por período da data do agendamento.
 - É possível ordenar por nome do produto, quantidade, data do agendamento e data de criação do pedido, em ordem crescente ou decrescente.
 - O usuário controla os itens por página (10, 25, 50) e navega entre as páginas.
-- Todas as datas e horários são exibidos no **horário do sistema** ([PAE-045]).
+- Todas as datas e horários são exibidos no **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 - Quando não houver resultados, o sistema exibe a mensagem "Nenhum resultado encontrado".
 - Todos os filtros, ordenações e paginação são feitos no backend.

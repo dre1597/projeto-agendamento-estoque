@@ -32,4 +32,5 @@ Para não me confundir com fusos ao agendar e executar pedidos.
 - O relógio mostra também o **horário local do usuário**, para comparação.
 - O rótulo é "Horário do sistema" (não o nome da cidade), pra continuar correto se o fuso do sistema mudar.
 - Todas as regras que dependem de horário (janelas, antecedências, limites, agendamentos) usam o **horário do sistema**.
-- Ver também as recomendações gerais de fusos horários em [PAE-000].
+- Todo horário **registrado ou exibido** no sistema (históricos, listagens e detalhes) é no **horário do sistema**.
+- Ver também as recomendações gerais de fusos horários em [PAE-000](pae-000-recomendacoes-gerais.md).

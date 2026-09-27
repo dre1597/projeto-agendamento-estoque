@@ -23,7 +23,7 @@ Para manter o cadastro limpo e evitar informações irrelevantes no sistema.
 4. Se confirmado:
    - O sistema verifica se o produto está em uso (possui movimentações de estoque).
    - Se estiver em uso, bloqueia a exclusão com a mensagem "Não é possível excluir: o produto possui movimentações de estoque".
-   - Se não estiver, exclui o produto do banco e registra a exclusão no histórico de alterações do produto ([PAE-018]), incluindo a razão informada.
+   - Se não estiver, exclui o produto do banco e registra a exclusão no histórico de alterações do produto ([PAE-018](pae-018-rastrear-historico-de-alteracoes-de-produtos.md)), incluindo a razão informada.
 5. Atualiza a listagem refletindo a exclusão.
 
 ### **Critérios de aceite:**
@@ -34,7 +34,7 @@ Para manter o cadastro limpo e evitar informações irrelevantes no sistema.
 - Impede a exclusão se o produto possuir movimentações de estoque.
 - Exibe a mensagem "Não é possível excluir: o produto possui movimentações de estoque" ao bloquear a exclusão.
 - Remove o produto corretamente quando permitido.
-- A exclusão gera um registro no histórico de alterações do produto ([PAE-018]).
+- A exclusão gera um registro no histórico de alterações do produto ([PAE-018](pae-018-rastrear-historico-de-alteracoes-de-produtos.md)).
 - A razão da exclusão é obrigatória (3 a 500 caracteres) e fica registrada no histórico.
 - A exclusão pode ser acionada pela listagem ou pelos detalhes do produto.
 - Atualiza a listagem imediatamente após a exclusão.

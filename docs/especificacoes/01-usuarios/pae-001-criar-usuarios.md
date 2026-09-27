@@ -28,7 +28,7 @@ Para conceder acesso ao sistema de forma segura e com controle de troca de senha
    - Garante que a senha (manual ou gerada) tenha no mínimo 8 caracteres e combine letras, números e símbolos.
    - Persiste os dados com a flag de troca de senha, se marcada.
    - Cria o usuário com status ativo.
-   - Registra a criação no histórico de alterações do usuário (ver [PAE-006]).
+   - Registra a criação no histórico de alterações do usuário (ver [PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
    - Exibe o novo usuário na listagem.
 
 ### **Critérios de aceite:**
@@ -43,7 +43,7 @@ Para conceder acesso ao sistema de forma segura e com controle de troca de senha
 - Ao marcar a opção de troca de senha, o sistema exige que o usuário troque a senha ao fazer o primeiro login.
 - O usuário é criado com status ativo.
 - O cadastro só pode ser feito por administradores.
-- A criação gera um registro no histórico de alterações do usuário (ver [PAE-006]).
+- A criação gera um registro no histórico de alterações do usuário (ver [PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 - Mensagens de erro:
    - username duplicado: "Este username já está em uso";
    - tamanho do username: "O username deve ter entre 3 e 20 caracteres";

@@ -29,7 +29,7 @@ Para que o pedido possa ser reagendado ou executado de novo.
 6. O sistema:
    - Altera o status do pedido para `"Pendente"`.
    - Registra data/hora (no **horário do sistema**), quem registrou e a razão informada.
-   - Devolve o pedido para que possa ser reagendado ou executado de novo ([PAE-027]).
+   - Devolve o pedido para que possa ser reagendado ou executado de novo ([PAE-027](pae-027-agendar-pedido-de-movimentacao-para-execucao-no-estoque.md)).
 7. Quando a não realização for por falta de saldo (numa remoção), a razão indicada por quem registra é "sem estoque".
 
 ### **Critérios de aceite:**
@@ -39,7 +39,7 @@ Para que o pedido possa ser reagendado ou executado de novo.
 - O sistema exibe a confirmação **"Você deseja confirmar que a execução não foi realizada?"** antes de registrar.
 - A razão é obrigatória: um dos motivos prontos ou "outro" com texto de 3 a 100 caracteres.
 - O status muda para `"Pendente"` e o pedido fica disponível para novo agendamento/execução.
-- O sistema registra data/hora (no **horário do sistema**, [PAE-045]), responsável e a razão.
+- O sistema registra data/hora (no **horário do sistema**, [PAE-045](../00-geral/pae-045-relogio-do-sistema.md)), responsável e a razão.
 - A razão é sempre **informada por quem registra**; o sistema não a define sozinho.
 - Numa remoção sem saldo, a razão indicada é "sem estoque".
 

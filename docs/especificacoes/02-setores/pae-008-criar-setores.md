@@ -25,7 +25,7 @@ Para organizar melhor os produtos.
    - Valida se já existe setor com o mesmo `nome` ou a mesma `sigla` (ignorando maiúsculas/minúsculas) e, se sim, bloqueia com a mensagem correspondente.
    - Valida os tamanhos: nome (≤100), sigla (≤3), descrição (≤255).
    - Persiste o setor com status ativo.
-   - Registra a criação no histórico de alterações do setor (ver [PAE-013]).
+   - Registra a criação no histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
    - Exibe o novo setor na listagem.
 
 ### **Critérios de aceite:**
@@ -37,7 +37,7 @@ Para organizar melhor os produtos.
 - Validações de tamanho: nome (≤100), sigla (≤3), descrição (≤255).
 - O setor é criado com status ativo.
 - O cadastro só pode ser feito por administradores.
-- A criação gera um registro no histórico de alterações do setor (ver [PAE-013]).
+- A criação gera um registro no histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
 - Mensagens de erro:
   - nome duplicado: "Já existe um setor com este nome";
   - sigla duplicada: "Já existe um setor com esta sigla";

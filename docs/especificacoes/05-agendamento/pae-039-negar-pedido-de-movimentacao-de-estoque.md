@@ -31,8 +31,9 @@ Para encerrá-lo quando ele não for mais ser executado.
 - Apenas administradores podem negar o pedido.
 - O sistema exige confirmação antes de negar.
 - Ao confirmar, o status muda para `"Negado"` e o pedido fica finalizado.
-- O sistema registra data/hora (no **horário do sistema**, [PAE-045]) e o responsável.
+- O sistema registra data/hora (no **horário do sistema**, [PAE-045](../00-geral/pae-045-relogio-do-sistema.md)) e o responsável.
 - O pedido negado não pode ser reagendado nem executado.
+- A negação é registrada no histórico do pedido ([PAE-040](../04-estoque/pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 

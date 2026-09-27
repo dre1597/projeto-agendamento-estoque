@@ -19,7 +19,7 @@ Para consultar suas informações e o histórico de alterações.
 1. Administrador acessa a listagem de setores.
 2. Seleciona um setor e é levado à tela de detalhes.
 3. A tela exibe, em modo somente leitura: `nome`, `sigla`, `descrição` e `status` (ativo/inativo).
-4. A tela dá acesso ao histórico de alterações do setor (ver [PAE-013]).
+4. A tela dá acesso ao histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
 5. A partir da tela, o administrador pode acionar as ações já especificadas em outros cards (editar, ativar/inativar e excluir).
 
 ### **Critérios de aceite:**
@@ -27,6 +27,6 @@ Para consultar suas informações e o histórico de alterações.
 - A tela de detalhes é acessível apenas a administradores.
 - Os dados são exibidos em modo somente leitura (não editáveis na tela).
 - A tela exibe `nome`, `sigla`, `descrição` e `status` (ativo/inativo).
-- A tela dá acesso ao histórico de alterações do setor (ver [PAE-013]).
+- A tela dá acesso ao histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
 - Tendo permissão, o administrador pode executar qualquer ação da entidade a partir da tela de detalhes.
 - As ações disponíveis na tela são as já especificadas (editar, ativar/inativar e excluir).

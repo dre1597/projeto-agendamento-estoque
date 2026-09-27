@@ -32,9 +32,10 @@ Para encontrar facilmente os pedidos que me interessam e acompanhar as solicita�
 - A tabela exibe as colunas `código`, tipo, produto, quantidade, status, criador e data de criação.
 - É possível filtrar por `código`, por produto (busca parcial, ignorando maiúsculas e minúsculas), por status, por criador e por "apenas os meus pedidos".
 - É possível ordenar por `código`, nome do produto, quantidade ou data de criação, em ordem crescente ou decrescente.
-- Pedidos de verificação marcados pelo administrador como `"requer ajuste"` ([PAE-044]) são destacados na listagem e podem ser filtrados por ele.
+- Pedidos de verificação marcados pelo administrador como `"requer ajuste"` ([PAE-044](pae-044-sinalizar-verificacao-de-estoque-para-ajuste.md)) são destacados na listagem e podem ser filtrados por ele.
 - O usuário controla os itens por página (10, 25, 50).
 - Quando não houver resultados, o sistema exibe a mensagem "Nenhum resultado encontrado".
+- As datas e horários são exibidos no **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 - Todos os filtros, ordenações e paginação são processados no backend.
 
 ### **Máquina de estados (contexto):**

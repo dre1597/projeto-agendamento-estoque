@@ -23,7 +23,7 @@ Para impedir o uso de setores obsoletos sem precisar excluí-los quando ainda es
    - Ao **inativar** um setor que possui produtos relacionados, a confirmação muda para alertar o usuário, informando quantos produtos e mostrando pelo menos um exemplo: **"Este setor está relacionado a [N] produtos (ex.: [produto]). Deseja inativar mesmo assim?"**
 4. Após confirmação:
    - O sistema atualiza o status do setor.
-   - Registra a alteração no histórico de alterações do setor ([PAE-013]).
+   - Registra a alteração no histórico de alterações do setor ([PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
    - A ação é refletida imediatamente na listagem.
 
 ### **Critérios de aceite:**
@@ -35,5 +35,5 @@ Para impedir o uso de setores obsoletos sem precisar excluí-los quando ainda es
 - Setores inativos não podem ser selecionados em novos cadastros de produtos, mas vínculos já existentes são mantidos.
 - Ao inativar um setor com produtos relacionados, o sistema alerta o usuário (quantidade e um produto de exemplo), mas permite a inativação se ele confirmar.
 - O status atualizado do setor (ativo/inativo) é refletido imediatamente na listagem.
-- A ativação/inativação gera um registro no histórico de alterações do setor ([PAE-013]).
+- A ativação/inativação gera um registro no histórico de alterações do setor ([PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
 - O sistema impede que a mesma ação seja executada duas vezes seguidas (ex.: inativar um setor já inativo).

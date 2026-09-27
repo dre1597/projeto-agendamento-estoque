@@ -2,9 +2,9 @@
 
 ### **Descrição:**
 
-Depois de aprovado (ou devolvido para `"Pendente"`), o criador do pedido pode agendá-lo para execução respeitando as regras configuráveis do sistema, que definem a janela de horário permitida, os dias da semana em que o agendamento é possível e a capacidade por horário (até 15 dias do dia atual para frente). O agendamento é só um **norte** para o usuário executar no mundo real e **não reserva estoque** — o saldo é verificado na execução ([PAE-026]/[PAE-030]).
+Depois de aprovado (ou devolvido para `"Pendente"`), o criador do pedido pode agendá-lo para execução respeitando as regras configuráveis do sistema, que definem a janela de horário permitida, os dias da semana em que o agendamento é possível e a capacidade por horário (até 15 dias do dia atual para frente). O agendamento é só um **norte** para o usuário executar no mundo real e **não reserva estoque** — o saldo é verificado na execução ([PAE-026](../04-estoque/pae-026-marcar-pedido-de-movimentacao-como-executado.md)/[PAE-030](pae-030-registrar-execucao-nao-realizada-do-pedido.md)).
 
-Todo horário é tratado no **horário do sistema**, e não no fuso local do usuário ([PAE-045]).
+Todo horário é tratado no **horário do sistema**, e não no fuso local do usuário ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 
 ### **Objetivo:**
 
@@ -37,8 +37,8 @@ Para que ele seja executado no estoque dentro das regras definidas pelo sistema.
 - O sistema aplica as configurações de janela de horário e dias permitidos.
 - O sistema permite agendar apenas nos próximos 15 dias, a partir do dia atual.
 - O sistema não permite agendar para a janela vigente (caso o usuário esteja dentro de uma janela de agendamento).
-- Todas as janelas, antecedências e limites são calculados no **horário do sistema** ([PAE-045]), independentemente do fuso do usuário.
-- O agendamento **não valida nem reserva saldo**; a verificação de saldo ocorre na execução ([PAE-026]/[PAE-030]).
+- Todas as janelas, antecedências e limites são calculados no **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)), independentemente do fuso do usuário.
+- O agendamento **não valida nem reserva saldo**; a verificação de saldo ocorre na execução ([PAE-026](../04-estoque/pae-026-marcar-pedido-de-movimentacao-como-executado.md)/[PAE-030](pae-030-registrar-execucao-nao-realizada-do-pedido.md)).
 - O sistema exibe corretamente horários disponíveis e vagas restantes.
 - O sistema rejeita agendamentos fora da janela, em dias não permitidos ou com limite excedido.
 - O status do pedido muda para `"Agendado"` após o agendamento.

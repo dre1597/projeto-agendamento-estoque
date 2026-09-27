@@ -32,6 +32,7 @@ Para corrigir erros ou remover pedidos indevidos antes de submetê-los.
 - A exclusão só é permitida se o status atual for `"Em Preparação"` **e** o pedido nunca tiver saído desse status.
 - O sistema exibe confirmação antes de excluir.
 - Após a exclusão, o pedido desaparece da listagem.
+- A exclusão é registrada no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 - O sistema bloqueia qualquer tentativa forçada de excluir pedidos fora dessa regra.
 
 ### **Máquina de estados (contexto):**

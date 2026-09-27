@@ -35,6 +35,7 @@ Para iniciar o processo de verificação e aprovação da movimentação.
 - Ao confirmar, o status do pedido muda para `"Requisitado"` e bloqueia edições.
 - Após o envio, o pedido aparece na listagem com o novo status.
 - O sistema impede que qualquer outro usuário ou status realize essa ação.
+- O envio é registrado no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 

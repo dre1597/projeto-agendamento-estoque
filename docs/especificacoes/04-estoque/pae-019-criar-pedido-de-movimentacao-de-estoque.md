@@ -29,13 +29,13 @@ Para registrar a solicitação de adição, remoção ou verificação de itens.
    - Gera um `código` sequencial, único e imutável para o pedido.
    - Persiste o pedido com status `"Em Preparação"`, vinculado ao criador e com data/hora.
    - Exibe o pedido na listagem.
-5. O pedido fica disponível para ajuste pelo criador ([PAE-021]) e, depois, para requisição ([PAE-023]).
+5. O pedido fica disponível para ajuste pelo criador ([PAE-021](pae-021-atualizar-pedido-de-movimentacao-de-estoque.md)) e, depois, para requisição ([PAE-023](pae-023-requisitar-um-pedido.md)).
 
 ### **Sobre a verificação:**
 
 - É uma **conferência**: registra a contagem física e as observações, e **não altera o saldo**.
 - O sistema **não compara** a contagem com o saldo, **não calcula divergência**, **não gera relatório** e **não marca nada automaticamente** — o detalhamento (ex.: "real 8, sistema 10") é descritivo, vai na observação.
-- O administrador pode sinalizar manualmente que a verificação `"requer ajuste"` ([PAE-044]); o ajuste, quando houver, é criado **manualmente** como um pedido de adição/remoção.
+- O administrador pode sinalizar manualmente que a verificação `"requer ajuste"` ([PAE-044](pae-044-sinalizar-verificacao-de-estoque-para-ajuste.md)); o ajuste, quando houver, é criado **manualmente** como um pedido de adição/remoção.
 
 ### **Critérios de aceite:**
 

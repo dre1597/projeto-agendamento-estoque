@@ -20,7 +20,7 @@ Para gerenciar o acesso sem perder o histórico de cadastro.
 2. Para cada usuário, existe a opção de ativar ou inativar; o administrador não pode alterar o próprio status.
 3. Ao clicar na opção, o sistema exibe confirmação:
    **"Tem certeza que deseja [ativar/inativar] este usuário?"**
-4. Após confirmação, o sistema atualiza o status e registra a alteração no histórico ([PAE-006]).
+4. Após confirmação, o sistema atualiza o status e registra a alteração no histórico ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 5. Usuários inativos ficam bloqueados para acesso ao sistema, mas permanecem listados.
 
 ### **Critérios de aceite:**
@@ -31,5 +31,5 @@ Para gerenciar o acesso sem perder o histórico de cadastro.
 - A ação exige confirmação antes de ser aplicada.
 - Usuários inativos não podem fazer login.
 - O status é refletido imediatamente na listagem após a alteração.
-- A ativação/inativação gera um registro no histórico de alterações ([PAE-006]).
+- A ativação/inativação gera um registro no histórico de alterações ([PAE-006](pae-006-rastrear-historico-de-alteracoes-de-usuarios.md)).
 - O sistema previne ações repetidas desnecessárias (ex.: inativar usuário já inativo).

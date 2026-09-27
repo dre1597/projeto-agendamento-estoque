@@ -25,7 +25,7 @@ Para manter as informações consistentes e atualizadas.
    - Valida se o `nome` ou a `sigla` já pertencem a **outro** setor (ignorando maiúsculas/minúsculas) e, se sim, bloqueia com a mensagem correspondente.
    - Valida que nome e sigla continuam obrigatórios e que os tamanhos são respeitados: nome (≤100), sigla (≤3), descrição (≤255).
    - Persiste os dados atualizados.
-   - Registra a alteração no histórico de alterações do setor (ver [PAE-013]).
+   - Registra a alteração no histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
    - Exibe a versão atualizada na listagem.
 
 ### **Critérios de aceite:**
@@ -37,7 +37,7 @@ Para manter as informações consistentes e atualizadas.
 - A `descrição` pode ser deixada vazia/limpa na edição.
 - Validações de tamanho continuam aplicadas: nome (≤100), sigla (≤3), descrição (≤255).
 - A edição só pode ser feita por administradores.
-- A atualização gera um registro no histórico de alterações do setor (ver [PAE-013]).
+- A atualização gera um registro no histórico de alterações do setor (ver [PAE-013](pae-013-rastrear-historico-de-alteracoes-de-setores.md)).
 - Mensagens de erro:
   - nome duplicado: "Já existe um setor com este nome";
   - sigla duplicada: "Já existe um setor com esta sigla";

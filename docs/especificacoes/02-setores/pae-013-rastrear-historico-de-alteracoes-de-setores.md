@@ -40,3 +40,4 @@ Para entender o que foi modificado, por quem e quando.
 - O histórico pode ser consultado pelos administradores.
 - O histórico é ordenado do mais recente para o mais antigo.
 - O histórico é imutável: seus registros não podem ser editados nem excluídos.
+- A data/hora dos eventos é a do **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).

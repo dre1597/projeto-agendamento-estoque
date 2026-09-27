@@ -26,7 +26,7 @@ Para entender o que foi modificado, por quem e quando.
        - Mudança de status: de → para, com o responsável.
        - Exclusão: "o pedido foi excluído".
      - Razão do evento, quando houver (ex.: execução não realizada).
-2. Na tela de detalhes do pedido ([PAE-021]), o usuário pode acessar o histórico.
+2. Na tela de detalhes do pedido ([PAE-021](pae-021-atualizar-pedido-de-movimentacao-de-estoque.md)), o usuário pode acessar o histórico.
 3. O histórico exibe os eventos do mais recente para o mais antigo.
 
 ### **Critérios de aceite:**
@@ -38,6 +38,7 @@ Para entender o que foi modificado, por quem e quando.
 - O histórico pode ser consultado por qualquer usuário autenticado.
 - O histórico é ordenado do mais recente para o mais antigo.
 - O histórico é imutável: seus registros não podem ser editados nem excluídos.
+- A data/hora dos eventos é a do **horário do sistema** ([PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 
 ### **Máquina de estados (contexto):**
 

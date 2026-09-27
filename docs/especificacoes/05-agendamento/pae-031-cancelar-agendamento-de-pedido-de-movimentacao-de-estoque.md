@@ -25,19 +25,20 @@ Para poder reagendar ou manter o pedido pendente.
 4. Confirmando:
    - O status do pedido muda para `"Pendente"`.
    - O sistema registra data/hora (no **horário do sistema**), usuário e ação.
-5. O pedido fica disponível para novo agendamento ([PAE-027]).
+5. O pedido fica disponível para novo agendamento ([PAE-027](pae-027-agendar-pedido-de-movimentacao-para-execucao-no-estoque.md)).
 
 ### **Critérios de aceite:**
 
 - Apenas pedidos com status `"Agendado"` podem ter o agendamento cancelado.
 - Apenas o criador do pedido pode cancelar o agendamento.
-- Só é possível cancelar com pelo menos **24 horas** de antecedência (no **horário do sistema**, [PAE-045]).
+- Só é possível cancelar com pelo menos **24 horas** de antecedência (no **horário do sistema**, [PAE-045](../00-geral/pae-045-relogio-do-sistema.md)).
 - O botão "Cancelar agendamento" só aparece quando há 24h ou mais de antecedência.
 - O sistema exibe a confirmação **"Você deseja cancelar o agendamento? O pedido voltará para Pendente."** antes de cancelar.
 - Se faltar menos de 24h, o sistema bloqueia com **"Não é possível cancelar: o agendamento tem menos de 1 dia de antecedência."**
 - O status do pedido muda para `"Pendente"` após o cancelamento.
 - O sistema registra o cancelamento (data, hora no **horário do sistema** e usuário).
 - O pedido cancelado pode ser reagendado normalmente.
+- O cancelamento é registrado no histórico do pedido ([PAE-040](../04-estoque/pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 

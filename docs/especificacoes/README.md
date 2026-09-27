@@ -54,6 +54,9 @@
 - [PAE-040 — Rastrear histórico de alterações de pedidos de movimentação de estoque](./04-estoque/pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)
 - [PAE-042 — Visualizar pedido de movimentação de estoque](./04-estoque/pae-042-visualizar-pedido-de-movimentacao-de-estoque.md)
 - [PAE-044 — Sinalizar verificação de estoque para ajuste](./04-estoque/pae-044-sinalizar-verificacao-de-estoque-para-ajuste.md)
+- [PAE-046 — Listar movimentações do produto](./04-estoque/pae-046-listar-movimentacoes-do-produto.md)
+- [PAE-047 — Listar movimentações de estoque](./04-estoque/pae-047-listar-movimentacoes-de-estoque.md)
+- [Fluxo do pedido](./04-estoque/fluxo-do-pedido.md) — referência (não é história)
 
 ### AGENDAMENTO
 

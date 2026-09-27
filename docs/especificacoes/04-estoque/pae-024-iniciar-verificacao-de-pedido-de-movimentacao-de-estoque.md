@@ -33,6 +33,7 @@ Para indicar que estou analisando a solicitação antes de aprová-la ou rejeit�
 - Ao confirmar, o status muda para `"Em Verificação"` e registra quem iniciou a análise.
 - Não é possível editar ou excluir o pedido após essa transição.
 - O status atualizado aparece corretamente na listagem e na tela de detalhes.
+- A ação é registrada no histórico do pedido ([PAE-040](pae-040-rastrear-historico-do-pedido-de-movimentacao-de-estoque.md)).
 
 ### **Máquina de estados (contexto):**
 
